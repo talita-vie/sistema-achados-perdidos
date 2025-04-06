@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+id        Int      @id @default(autoincrement())
+nome      String
+telefone  String?
+email     String   @unique
+itens     Item[]
+senha     String
+}
+
+model Categoria {
+id    Int    @id @default(autoincrement())
+nome  String
+itens Item[]
+}
+
+// Para a modelagem de Item, assumimos que:
+// Um usuário pode cadastrar vários itens(1:N)
+// Uma categoria pode estar associada a vários itens (1:N)
+model Item {
+id           Int       @id @default(autoincrement())
+nome         String
+data         DateTime
+localizacao  String
+contato      String
+foto         String?    // URL do arquivo de imagem, se houver
+status       Status
+usuarioId    Int
+categoriaId  Int
+
+usuario      Usuario   @relation(fields: [usuarioId], references: [id])
+categoria    Categoria @relation(fields: [categoriaId], references: [id])
+}
+
+enum Status {
+PERDIDO
+ENCONTRADO
+}
