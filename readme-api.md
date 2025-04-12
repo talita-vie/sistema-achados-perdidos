@@ -1,70 +1,4 @@
-# Sistema de Achados e Perdidos Comunitário
-
-API back-end para um sistema que permite o cadastro e consulta de itens perdidos e encontrados, facilitando a devolução de objetos aos seus donos.
-
-## Tecnologias Utilizadas
-
-- Node.js com Express
-- Prisma ORM
-- PostgreSQL
-- JavaScript
-
-## Instalação
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/talita-vie/sistema-achados-perdidos.git
-cd sistema-achados-perdidos
-```
-
-2. Instale as dependências:
-
-```bash
-npm install
-```
-
-3. Configure o arquivo `.env` com suas credenciais de banco de dados:
-
-```
-DATABASE_URL="postgresql://username:password@localhost:5432/achados_perdidos?schema=public"
-PORT=3000
-```
-
-4. Execute as migrações do banco de dados:
-
-```bash
-npx prisma migrate dev --name init
-```
-
-5. Inicie o servidor:
-
-```bash
-# Modo desenvolvimento
-npm run dev
-
-# Modo produção
-npm start
-```
-
-## Estrutura do Projeto
-
-```
-achados-perdidos/
-├── prisma/
-│   └── schema.prisma       # Definição do esquema do banco de dados
-├── src/
-│   ├── controllers/        # Controladores das rotas
-│   ├── routes/             # Definição das rotas
-│   ├── middlewares/        # Middlewares da aplicação
-│   ├── utils/              # Funções utilitárias
-│   └── app.js             # Configuração do Express
-├── .env                    # Variáveis de ambiente
-├── package.json
-└── server.js              # Ponto de entrada da aplicação
-```
-
-## Documentação da API
+## Documentação da API do Sistema de Achados e Perdidos Comunitário
 
 ### Categorias
 
@@ -489,17 +423,3 @@ Para testar a API, você pode usar ferramentas como Postman, Insomnia ou Thunder
      "descricao": "Celular com capa vermelha e tela trincada"
    }
    ```
-
-## Contribuição
-
-Para contribuir com este projeto:
-
-1. Fork o repositório
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
-3. Faça commit das suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/nova-funcionalidade`)
-5. Abra um Pull Request
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT.
