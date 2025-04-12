@@ -83,8 +83,7 @@
     -   Local em que foi perdido/encontrado
     -   Código único para identificação
 
-    [Documentação completa da API:](https://github.com/talita-vie/sistema-achados-perdidos/blob/master/readme-achados-perdidos.md)
-
+   Para mais informações, consulte [Documentação da API](readme-achados-perdidos.md)
 ##   Desenvolvimento futuro do projeto
 
     Será desenvolvida a interface Front-End com JavaScript e React, 
