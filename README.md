@@ -1,45 +1,43 @@
 #   Sistema de Achados e Perdidos Comunitário 📍
 
-    Criação de uma API Back-End para um sistema que permite 
-    o cadastro e consulta de itens perdidos e encontrados em uma cidade ou comunidade, 
-    facilitando a devolução de objetos para os seus donos.
+Criação de uma API Back-End para um sistema que permite o cadastro e consulta de itens perdidos e encontrados em uma cidade ou comunidade, facilitando a devolução de objetos para os seus donos.
 
 ##  1. Tecnologias Utilizadas
 
-    Node.js com Express
-    Prisma ORM
-    PostgreSQL
-    JavaScript
+   Node.js com Express
+   Prisma ORM
+   PostgreSQL
+   JavaScript
 
 ##  2. Instalação do projeto na sua máquina
 
-    Clone o repositório:
+   Clone o repositório:
 
     \`\`\`bash
     git clone https://github.com/talita-vie/sistema-achados-perdidos.git
     cd sistema-achados-perdidos
     \`\`\`
 
-    Instale as dependências:
+   Instale as dependências:
 
     \`\`\`bash
     npm install
     \`\`\`
 
-    Configure o arquivo `.env` com suas credenciais de banco de dados:
+   Configure o arquivo `.env` com suas credenciais de banco de dados:
 
     \`\`\`
     DATABASE_URL="postgresql://username:password@localhost:5432/achados_perdidos?schema=public"
     PORT=3000
     \`\`\`
 
-    Execute as migrações do banco de dados:
+   Execute as migrações do banco de dados:
 
     \`\`\`bash
     npx prisma migrate dev --name init
     \`\`\`
 
-    Inicie o servidor:
+   Inicie o servidor:
 
     \`\`\`bash
     # Modo desenvolvimento
@@ -68,37 +66,36 @@
 
 ##   4. Visão Geral da API
 
-    A API do Sistema de Achados e Perdidos Comunitário permite:
+ A API do Sistema de Achados e Perdidos Comunitário permite:
 
-    -   Cadastrar novos itens perdidos ou encontrados.
-    -   Buscar itens por diversos critérios (categoria, status, palavras-chave).
-    -   Visualizar detalhes de um item específico.
-    -   Editar informações de itens existentes.
-    -   Excluir itens.
+  -   Cadastrar novos itens perdidos ou encontrados.
+  -   Buscar itens por diversos critérios (categoria, status, palavras-chave).
+  -   Visualizar detalhes de um item específico.
+  -   Editar informações de itens existentes.
+  -   Excluir itens.
 
-    Cada item é associado a atributos como:
+Cada item é associado a atributos como:
 
-    -   Descrição do objeto
-    -   Características físicas
-    -   Local em que foi perdido/encontrado
-    -   Código único para identificação
+   -   Descrição do objeto
+   -   Características físicas
+   -   Local em que foi perdido/encontrado
+   -   Código único para identificação
 
    Para mais informações, consulte [Documentação da API](readme-achados-perdidos.md)
 ##   Desenvolvimento futuro do projeto
 
-    Será desenvolvida a interface Front-End com JavaScript e React, 
-    configurando a aplicação completa do Sistema de Achados e Perdidos Comunitário.
+   Será desenvolvida a interface Front-End com JavaScript e React, configurando a aplicação completa do Sistema de Achados e Perdidos Comunitário.
 
 ##   Contribuição
 
-    Para contribuir com este projeto:
+   Para contribuir com este projeto:
 
-    1.  Fork o repositório
-    2.  Crie uma branch para sua feature (git checkout -b feature/nova-funcionalidade)
-    3.  Faça commit das suas alterações (git commit -m 'Adiciona nova funcionalidade')
-    4.  Push para a branch (git push origin feature/nova-funcionalidade)
-    5.  Abra um Pull Request
+   1.  Fork o repositório
+   2.  Crie uma branch para sua feature (git checkout -b feature/nova-funcionalidade)
+   3.  Faça commit das suas alterações (git commit -m 'Adiciona nova funcionalidade')
+   4.  Push para a branch (git push origin feature/nova-funcionalidade)
+   5.  Abra um Pull Request
 
 ##   Licença
 
-    Este projeto está licenciado sob a licença MIT.
+  Este projeto está licenciado sob a licença MIT.
