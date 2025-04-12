@@ -81,7 +81,7 @@ Cada item é associado a atributos como:
    -   Local em que foi perdido/encontrado
    -   Código único para identificação
 
-   Para mais informações, consulte [Documentação da API](readme-achados-perdidos.md)
+   Para mais informações, consulte [Documentação da API](readme-api.md)
 ##   Desenvolvimento futuro do projeto
 
    Será desenvolvida a interface Front-End com JavaScript e React, configurando a aplicação completa do Sistema de Achados e Perdidos Comunitário.
