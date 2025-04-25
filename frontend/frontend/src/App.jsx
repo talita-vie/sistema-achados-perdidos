@@ -5,6 +5,7 @@ import ItemList from "./pages/itemlist";
 import EditItem from "./pages/edititem";
 import Home from "./pages/home";
 import MyItems from "./pages/myitens";
+import Login from "./pages/login";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/editar" element={<EditItem />} />
         <Route path="/inicio" element={<Home />} />
         <Route path="/meus-itens" element={<MyItems />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );

@@ -1,5 +1,3 @@
-import background from "../assets/bg.jpg";
-
 export default function MyItems() {
   const meusItens = [
     {
@@ -18,7 +16,6 @@ export default function MyItems() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#0B1437] p-6">
-      >
       <div className="bg-white bg-opacity-80 p-10 rounded-2xl w-full max-w-3xl shadow-md">
         <h1 className="text-2xl font-bold text-gray-900 mb-6 text-center">
           Meus Itens
