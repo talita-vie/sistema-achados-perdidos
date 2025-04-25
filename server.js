@@ -16,8 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 //Rotas
-
-app.use('/api/usuarios', userRoutes);
+app.use('/', userRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/protected', protectedRoutes);
 app.use('/api/categorias', categoryRoutes);

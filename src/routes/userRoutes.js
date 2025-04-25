@@ -5,6 +5,7 @@ import  autenticarToken  from '../middleware/authMiddleware.js';
 const router = express.Router();
 const userController = new UserController();
 
+router.post('/usuarios', userController.createUser);
 router.use(autenticarToken);
 
 router.get('/', userController.searchUser); 
