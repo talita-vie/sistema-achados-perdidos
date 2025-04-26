@@ -52,7 +52,7 @@ export default function Home() {
               Ver itens achados
             </a>
             <a
-              href="/register-item"
+              href="/cadastro-item"
               className="bg-[#0B1437] text-white font-bold px-6 py-4 rounded-2xl w-48 text-lg hover:bg-[#1c2b61] transition"
             >
               Cadastrar item

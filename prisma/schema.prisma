@@ -28,9 +28,10 @@ itens Item[]
 model Item {
 id           Int       @id @default(autoincrement())
 nome         String
+descricao    String
 data         DateTime
 localizacao  String
-contato      String
+contato      String?
 foto         String?    // URL do arquivo de imagem, se houver
 status       Status
 usuarioId    Int
